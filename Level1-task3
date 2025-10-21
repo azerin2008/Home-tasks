@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+double x;
+double kvadrat;
+double kub;
+ cout << "Eded daxil edin: ";
+ cin >> x;
+kvadrat = x * x;
+ cout << "x² = ";
+ cout << kvadrat <<endl;
+kub = x * x * x;
+ cout << "x³ = ";
+ cout << kub;
+    return 0;
+}
