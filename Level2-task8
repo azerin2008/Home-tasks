@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a;
+  cout << "Il daxil edin: ";
+  cin >> a;
+  if(a % 4 == 0){
+      cout << "Fevral 29 gundur.";
+  }
+  else
+  cout << "Fevral 28 gundur.";
+    return 0;
+}
