@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double r;
+    double p = M_PI;
+    double s;
+    double l;
+    cout << "Radius daxil edin: ";
+    cin >> r;
+    s = p * r * r;
+    cout << "sahe = ";
+    cout << s << endl;
+    l = 2 * p * r;
+    cout << "uzunluq = ";
+    cout << l;
+
+    return 0;
+}
