@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double a;
+   double b;
+   double c;
+   double m;
+   cout << "Birinci eded: ";
+   cin >> a;
+   cout << "Ikinci eded: ";
+   cin >> b;
+   cout << "Ucuncu eded: ";
+   cin >> c;
+   m = max(a, b);
+   m = max(m, c);
+   cout << m;
+    return 0;
+}
