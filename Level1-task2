@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int a;
+   int b;
+   int cem;
+   int ferq;
+   int hasil;
+   double qismet;
+   cout << "Birinci eded: ";
+   cin >> a;
+   cout << "Ikinci eded: ";
+   cin >> b;
+   cem = a + b;
+   cout << "cem = ";
+   cout << cem << endl;
+   ferq = a - b;
+   cout << "ferq = ";
+   cout << ferq << endl;
+   hasil = a * b;
+   cout << "hasil = ";
+   cout << hasil << endl;
+   qismet = a / b;
+   cout << "qismet = ";
+   cout << qismet;
+}
