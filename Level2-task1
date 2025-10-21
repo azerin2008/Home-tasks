@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double a;
+   double b;
+   double m;
+   cout << "Birinci eded: ";
+   cin >> a;
+   cout << "Ikinci eded: ";
+   cin >> b;
+   m = max(a, b);
+   cout << m;
+    return 0;
+}
