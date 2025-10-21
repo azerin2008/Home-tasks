@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  double a;
+  cout << "Telebenin bali: ";
+  cin >> a;
+  if(a > 100){
+      cout << "Bal duzgun deyil!" << endl;
+  }
+  else if(a >= 91){
+      cout << "Telebenin qiymeti = A";
+  }
+  else if(a >= 81){
+       cout << "Telebenin qiymeti = B";
+  }
+  else if(a >= 71){
+       cout << "Telebenin qiymeti = C";
+  }
+  else if(a >= 61){
+       cout << "Telebenin qiymeti = D";
+  }
+  else if(a >= 51){
+       cout << "Telebenin qiymeti = E";
+  }
+       else
+       cout << "Telebenin qiymeti = F";
+    return 0;
+}
