@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  double a;
+  double b;
+  char c;
+  cout << "Birinci eded: a = ";
+  cin >> a;
+  cout << "Ikinci eded: b = ";
+  cin >> b;
+  cout << "Emeliyyat daxil edin (+, -, *, /): ";
+  cin >> c;
+  switch(c) {
+      case '+':
+       cout << "a + b = ";
+       cout <<a + b;
+       break;
+      case '-':
+       cout << "a - b = ";
+       cout << a - b;
+       break;
+      case '*':
+       cout << "a * b = ";
+       cout << a * b;
+       break;
+      case '/':
+       cout << "a / b = ";
+       cout << a / b;
+       break;
+      default :
+      cout << "Yanlis emeliyyat!";
+  }
+    return 0;
+}
