@@ -9,12 +9,15 @@ int main() {
     double l;
     cout << "Radius daxil edin: ";
     cin >> r;
+    if(r > 0){
     s = p * r * r;
-    cout << "sahe = ";
+    cout << "Dairenin sahesi = ";
     cout << s << endl;
     l = 2 * p * r;
-    cout << "uzunluq = ";
+    cout << "Cevrenin uzunlugu = ";
     cout << l;
-
+}
+else
+cout << "Duzgun radius daxil edin!";
     return 0;
 }
