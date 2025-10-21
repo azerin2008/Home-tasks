@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double a, p, s;
+   cout << "Kvadratin terefi: a = ";
+   cin >> a;
+   if(a > 0){
+       p = 4 * a;
+       cout << "P = ";
+       cout << p << endl;
+       s = a * a;
+       cout << "S = ";
+       cout << s;
+   }
+   else
+   cout << "Teref duzgun deyil!";
+    return 0;
+}
