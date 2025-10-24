@@ -1,0 +1,17 @@
+#include <iostream> //ededin reqemleri cemi
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    int cem;
+    cout << "a = ";
+    cin >> a;
+    while(a > 0){
+    b = a % 10;
+    cem = cem + b;
+    a = a / 10;
+    }
+    cout << cem;
+    return 0;
+}
