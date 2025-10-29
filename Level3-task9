@@ -1,0 +1,33 @@
+#include <iostream>//ededin sade ve ya murekkeb oldugu
+#include <cmath>
+using namespace std;
+
+int main() {
+    int a, i = 3,n=0;
+    double b;
+    cout << "a = ";
+    cin >> a;
+    if(a == 1){
+        cout << a << " sade ve ya murekkeb deyil.";
+    }
+    if(a == 2){
+        cout << a << " sade ededdir.";
+    }
+     else if(a % 2 == 0){
+        cout << a << " sade eded deyil.";
+        }
+   else{
+    for(i = 3; i <= sqrt(a); i = i + 2){
+        if(a % i == 0){
+        cout << a << " sade eded deyil.";
+        n++;
+        break;
+        }
+    }
+    if(n==0){
+        cout<< a << " sade ededdir.";
+    }
+   }
+    
+    return 0;
+}
