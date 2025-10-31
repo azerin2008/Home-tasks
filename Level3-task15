@@ -1,0 +1,15 @@
+#include <iostream>//N sayda ededin cemi
+using namespace std;
+
+int main() {
+    int N, a, s;
+    cout << "Toplamaq istediyiniz ededlerin sayi: ";
+    cin >> N;
+    for(int i = 1; i <= N; i++){
+        cout << "a" << i << " = ";
+        cin >> a;
+        s = s + a;
+    }
+    cout << "cem: " << s;
+    return 0;
+}
