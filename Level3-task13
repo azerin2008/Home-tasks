@@ -1,0 +1,22 @@
+#include <iostream>//Polindrom
+using namespace std;
+
+int main() {
+   int a, b, c, d;
+   cout << "a = ";
+   cin >> a;
+   d = a;
+   while(d != 0){
+       b = d % 10;
+       c = c * 10 + b;
+       d = d / 10;
+   }
+   if(a == c){
+       cout << a << " polindrom ededdir.";
+   }
+   else{
+   cout << a << " polindrom eded deyil." << endl;
+   cout << a << " != " << c;
+   }
+    return 0;
+}
