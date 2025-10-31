@@ -1,0 +1,16 @@
+#include <iostream>//Reqemleri cemi 10 olan 3 reqemli ededler
+using namespace std;
+
+int main() {
+    int b, c, e, d;
+    cout << "Reqemleri cemi 10 olan 3 reqemli ededler: " << endl;
+    for(int a = 100; a <= 999; a++){
+        b = a % 10;
+        c = (a / 10) % 10;
+        d = a / 100;
+        if(b + c + d == 10){
+            cout << a << ", ";
+        }
+    }
+    return 0;
+}
