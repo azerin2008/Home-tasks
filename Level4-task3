@@ -1,0 +1,25 @@
+#include <iostream>//n-den kicik sade ededler
+#include <cmath>
+using namespace std;
+
+int main() {
+    int n;//n-serhed, i-bolen, k-bolunen
+    cout << "n = ";
+    cin >> n;
+    if(2 < n){
+        cout << 2 << endl;
+    }
+    for(int k = 3; k < n; k = k + 1){
+        int a = 0;
+     for(int i = 2; i <= sqrt(k); i = i + 1){
+        if(k % i == 0){
+            a++;
+            break;
+        }
+     }
+        if(a == 0){
+            cout << k << endl;
+        }
+        }
+    return 0;
+}
