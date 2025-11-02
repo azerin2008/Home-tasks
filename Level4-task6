@@ -1,0 +1,30 @@
+#include <iostream>//n sayda ededin max-b, min-c ve ededi ortasi-k
+using namespace std;
+
+int main() {
+    int n, a, b, c;
+    double s, k;
+    cout << "Daxil etmek istediyiniz ededlerin sayi: ";
+    cin >> n;
+    cout << "a1 = ";
+    cin >> a;
+    b = a;
+    c = a;
+    s = a;
+    for(int i = 2; i <= n; i++){
+        cout << "a" << i << " = ";
+        cin >> a;
+        s = s + a;
+        if(c > a){
+            c = a;
+        }
+        if(b < a){
+            b = a;
+        }
+    }
+    k = s / n;
+    cout << "max: " << b << endl;
+    cout << "min: " << c << endl;
+    cout << "ededi orta: " << k;
+    return 0;
+}
