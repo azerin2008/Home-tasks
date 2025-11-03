@@ -1,0 +1,42 @@
+#include <iostream>//Sade kalkulyator
+using namespace std;
+
+int main() {
+  double a;
+  double b;
+  char c;
+  cout << "Birinci eded: a = ";
+  cin >> a;
+  while(b != 0){
+  cout << "Novbeti eded: b = ";
+  cin >> b;
+  if(b != 0){
+  cout << "Emeliyyat daxil edin (+, -, *, /): ";
+  cin >> c;
+  switch(c) {
+      case '+':
+      a = a + b;
+       cout << "a + b = " << a << endl;
+       break;
+      case '-':
+      a = a - b;
+       cout << "a - b = " << a << endl;
+       break;
+      case '*':
+      a = a * b;
+       cout << "a * b = " << a << endl;
+       break;
+      case '/':
+      a = a / b;
+       cout << "a / b = " << a << endl;
+       break;
+      default :
+      cout << "Yanlis emeliyyat!";
+  }
+  }
+  else{
+      cout << "Emeliyyatin sonu.";
+  }
+  }
+    return 0;
+}
