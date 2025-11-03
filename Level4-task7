@@ -1,0 +1,27 @@
+#include <iostream>//Armstrong
+#include <cmath>
+using namespace std;
+
+int main() {
+  int x, y, n = 0, s = 0, m, t;
+  cout << "x = ";
+  cin >> x;
+  m = x;
+  t = x;
+  while(t != 0){
+      t = t / 10;
+      n = n + 1;
+  }
+  while(m != 0){
+      y = m % 10;
+      m = m / 10;
+      s = s + pow(y, n);
+  }
+  if(s == x){
+      cout << "Armstrong ededdir.";
+  }
+  else{
+      cout << "Armstrong eded deyil.";
+  }
+    return 0;
+}
