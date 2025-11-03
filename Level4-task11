@@ -1,0 +1,18 @@
+#include <iostream>//1000-den kicik fibonacci ededleri
+using namespace std;
+
+int main() {
+   int a = 0;
+   int b = 1;
+   int n = 1000;
+   while(a <= n & b <= n){
+       cout << a << ", ";
+       cout << b << ", ";
+       a = a + b;
+       b = b + a;
+   }
+   if(a <= n){
+           cout << a << endl;
+   }
+    return 0;
+}
