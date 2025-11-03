@@ -1,0 +1,22 @@
+#include <iostream>//Ededin tersi
+using namespace std;
+
+int main() {
+   int a, b, c, d;
+   cout << "a = ";
+   cin >> a;
+   d = a;
+   while(d != 0){
+       b = d % 10;
+       c = c * 10 + b;
+       d = d / 10;
+   }
+   cout << "Tersi: " << c << endl;
+   if(a == c){
+       cout << "Polindrom ededdir.";
+   }
+   else{
+   cout << "Polindrom eded deyil." << endl;
+   }
+    return 0;
+}
