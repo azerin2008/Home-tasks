@@ -1,0 +1,21 @@
+#include <iostream>//Tek ve cut indeksli ededlerin cemi
+using namespace std;
+
+int main() {
+  int n, a, b, c;
+  cout << "Daxil edilecek ededlerin sayi: ";
+  cin >> n;
+  for(int i = 1; i <= n; i++){
+      cout << i << ". ededi daxil edin: ";
+      cin >> c;
+      if(i % 2 == 1){
+          a = a + c;//Tek indeskler
+      }
+          else{
+              b = b + c;//Cut indeksler
+          }
+  }
+  cout << "Tek indeksli ededlerin cemi: " << a << endl;
+  cout << "Cut indeksli ededlerin cemi: " << b << endl;
+    return 0;
+}
