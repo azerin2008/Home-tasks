@@ -1,0 +1,12 @@
+#include <iostream>//ters sira
+using namespace std;
+
+int main() {
+    int n, i = 0;
+    int a[] = {1, 2, 3, 4, 5};
+    n = sizeof(a) / sizeof(a[0]);
+    for(i = n - 1; i >= 0; i--){
+        cout << a[i] << ", ";
+    }
+    return 0;
+}
