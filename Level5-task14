@@ -1,0 +1,24 @@
+#include <iostream>//ardicil elementlerin ceminden ibaret array
+using namespace std;
+
+int main() {
+    int s, b = 0;
+    int a [] = {1, 2, 3, 4};
+    cout << "[";
+    for(int i = 0; i < 3; i++){
+        cout << a[i] << "+" << a[i + 1];
+        if(i < 2){
+            cout << ", ";
+        }
+    }
+    cout << "]" << " = " << "[";
+    for(int i = 0; i < 3; i++){
+       b = a[i] + a[i + 1];
+       cout << b;
+        if(i < 2){
+            cout << ", ";
+        }
+    }
+    cout << "]";
+    return 0;
+}
