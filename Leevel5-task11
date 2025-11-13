@@ -1,0 +1,15 @@
+#include <iostream>//elementlerin cemi ve orta qiymeti
+using namespace std;
+
+int main() {
+    int b, c, i;
+    int a[] = {2, 4, 6};
+    int k = sizeof(a) / sizeof(a[i]);
+    for(int i = 0; i < k; i++){
+        b = b + a[i];
+    }
+    c = b / k;
+    cout << "Toplam: " << b << endl;
+    cout << "Orta qiymet: " << c;
+    return 0;
+}
