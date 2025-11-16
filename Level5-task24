@@ -1,0 +1,17 @@
+#include <iostream>//element + 1
+using namespace std;
+
+int main() {
+    int a[] = {1, 2, 3};
+    int n;
+    n = sizeof(a) / sizeof(a[0]);
+    cout << "[";
+    for(int i = 0; i < n; i++){
+        cout << a[i] + 1;
+        if(i < n - 1){
+            cout << ", ";
+        }
+    }
+    cout << "]";
+    return 0;
+}
