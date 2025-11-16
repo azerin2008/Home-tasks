@@ -1,0 +1,22 @@
+#include <iostream>//Tek ve cut indeksli elementler
+using namespace std;
+
+int main() {
+    int a[] = {10, 20, 30, 40, 50};
+    int n;
+    n = sizeof(a) / sizeof(a[0]);
+    cout << "Cut indeksler: ";
+    for(int i = 0; i < n; i++){
+        if(i % 2 == 0){
+            cout << a[i] << ", ";
+        }
+     }
+     cout << endl;
+     cout << "Tek indeksler: ";
+      for(int i = 0; i < n; i++){
+        if(i % 2 != 0){
+            cout << a[i] << ", ";
+        }
+     }
+    return 0;
+}
