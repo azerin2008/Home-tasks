@@ -1,0 +1,17 @@
+#include <iostream>//cem, ferq, hasil
+using namespace std;
+
+int main() {
+    int a[] = {1, 2, 3};
+    int n, cem = a[0], ferq = a[0], hasil = a[0];
+    n = sizeof(a) / sizeof(a[0]);
+    for(int i = 1; i < n; i++){
+        cem += a[i];
+        ferq -= a[i];
+        hasil *= a[i];
+    }
+    cout << "Toplam: " << cem << endl;
+    cout << "Cixarma: " << ferq << endl;
+    cout << "Vurma: " << hasil << endl;
+    return 0;
+}
