@@ -1,0 +1,19 @@
+#include <iostream>//Elementlerin kvadrat kokleri
+#include <cmath>
+using namespace std;
+
+int main() {
+   int a[] = {1, 4, 9, 16};
+   int n;
+   n = sizeof(a) / sizeof(a[0]);
+   cout << "[";
+   for(int i = 0; i < n; i++){
+       double b = sqrt(a[i]);
+       cout << b;
+       if(i < n - 1){
+           cout << ", ";
+       }
+   }
+   cout << "]";
+    return 0;
+}
