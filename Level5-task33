@@ -1,0 +1,18 @@
+#include <iostream>//Elementlerin cemini ardicil sekilde toplama
+using namespace std;
+
+int main() {
+   int a[] = {1, 2, 3, 4};
+   int b = 0, n;
+   n = sizeof(a) / sizeof(a[0]);
+   cout << "[";
+   for(int i = 0; i < n; i++){
+       b = a[i] + b;
+       cout << b;
+       if(i < n - 1){
+           cout << ", ";
+       }
+   }
+   cout << "]";
+    return 0;
+}
