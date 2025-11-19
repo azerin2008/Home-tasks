@@ -1,0 +1,18 @@
+#include <iostream>//Elementlerin ferqi
+using namespace std;
+
+int main() {
+    int a[] = {10, 2, 3};
+    int  n, b = a[0];
+    n = sizeof(a) / sizeof(a[0]);
+    cout << b << " - ";
+    for(int i = 1; i < n; i++){
+        b = b - a[i];
+        cout << a[i];
+        if(i < n - 1){
+            cout << " - ";
+        }
+    }
+    cout << " = " << b;
+    return 0;
+}
