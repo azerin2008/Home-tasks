@@ -1,0 +1,13 @@
+#include <iostream>//100-e qeder cut ededler
+using namespace std;
+
+void cut(){
+    for(int i = 2; i <= 100; i = i + 2){
+        cout << i << ", ";
+    }
+}
+
+int main() {
+    cut();
+    return 0;
+}
