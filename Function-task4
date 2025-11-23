@@ -1,0 +1,36 @@
+#include <iostream>//Funksiya ile telebenin qiymeti
+#include <string>
+using namespace std;
+
+string qiymet(double a){
+     if(a > 100){
+      return "Bal duzgun deyil!";
+  }
+  else if(a >= 91){
+      return "Telebenin qiymeti = A";
+  }
+  else if(a >= 81){
+       return "Telebenin qiymeti = B";
+  }
+  else if(a >= 71){
+       return "Telebenin qiymeti = C";
+  }
+  else if(a >= 61){
+       return "Telebenin qiymeti = D";
+  }
+  else if(a >= 51){
+       return "Telebenin qiymeti = E";
+  }
+       else{
+       return "Telebenin qiymeti = F";
+       }
+}
+
+int main() {
+  double b;
+  cout << "Telebenin bali: ";
+  cin >> b;
+  string c = qiymet(b);
+  cout << c;
+    return 0;
+}
