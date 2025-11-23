@@ -1,0 +1,21 @@
+#include <iostream>//Funksiya ile N sayda ededin cemi
+using namespace std;
+
+int sum (int N){
+    int a, s;
+    for(int i = 1; i <= N; i++){
+        cout << "a" << i << " = ";
+        cin >> a;
+        s = s + a;
+    }
+    return s;
+}
+
+int main() {
+    int n;
+    cout << "Toplamaq istediyiniz ededlerin sayi: ";
+    cin >> n;
+    int netice = sum(n);
+    cout << "Cem: " << netice;
+    return 0;
+}
