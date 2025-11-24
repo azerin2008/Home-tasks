@@ -1,0 +1,23 @@
+#include <iostream>//Funksiya ile ikilik kod
+#include <string>
+using namespace std;
+
+string bin (int a){
+    int b = 0;
+    string x = "";
+    while(a != 0){
+    b = a % 2;
+    a = a / 2;
+    x = char(b + '0') + x;//qaliqlari tersine yazir
+    }
+    return x;
+}
+
+int main() {
+    int eded;
+    cout << "Eded daxil edin: ";
+    cin >> eded;
+    string netice = bin (eded);
+    cout << netice;
+    return 0;
+}
