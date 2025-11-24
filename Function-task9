@@ -1,0 +1,25 @@
+#include <iostream>//Funksiya ile a ededinin tam bolenleri sayi
+using namespace std;
+
+int say (int a){
+    int n, b = 1;
+     if(a > 0){
+    while(b <= a){
+        if(a % b == 0){
+            n++;
+        }
+        b++;
+    }
+    cout << a << " ededinin tam bolenleri sayi: ";
+    }
+    return 2 * n;
+}
+
+int main() {
+    int eded;
+    cout << "Natural eded daxil edin: a = ";
+    cin >> eded;
+    int netice = say (eded);
+    cout << netice;
+    return 0;
+}
