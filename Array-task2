@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void edediHendesiOrta(int num){
+    int arr[num];
+    int s = 0;
+    int h = 1;
+    cout << "Elementleri daxil edin: ";
+    for(int i = 0; i < num; i++){
+        cin >> arr[i];
+    }
+    for(int i = 0; i < (num / 2); i++){
+        s = s + arr[i];
+    }
+    cout << "Ilk yarinin ededi ortasi: " << s / (num / 2) << endl;
+    for(int j = 10; j < num; j++){
+        h = h * arr[j];
+    }
+    cout << "Ikinci yarinin hendesi ortasi: " << sqrt(h);
+}
+
+int main() {
+    int n = 20;
+    edediHendesiOrta(n);
+    return 0;
+}
