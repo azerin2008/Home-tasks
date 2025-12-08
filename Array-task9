@@ -1,0 +1,50 @@
+#include <iostream>//Ikinci massiv birincinin k ve k+1 indeksli elementleri arasinda yerlesir
+using namespace std;
+
+void add(int n, int m, int k){
+    
+    int a[n];
+    cout <<"a[1] = ";
+    cin >> a[0];
+    for (int i = 1; i < n; i++){
+        cout << "a[" << i + 1 << "] = ";
+        cin >> a[i];
+    }
+    cout << endl;
+    int b[m];
+    cout <<"b[1] = ";
+    cin >> b[0];
+    for (int i = 1; i < m; i++){
+        cout << "b[" << i + 1 << "] = ";
+        cin >> b[i];
+    }
+    cout << endl;
+    cout << "Yeni massiv: ";
+    int c[n + m];
+    int p = 0;
+    for(int i = 0; i < k; i++){
+        c[p++] = a[i]; 
+    }
+    for(int i = 0; i < m; i++){
+        c[p++] = b[i];
+    }
+    for(int i = k; i < n; i++){
+        c[p++] = a[i];
+    }
+    for(int i = 0; i < n + m; i++){
+        cout << c[i] << ", ";
+    }
+
+}
+
+int main() {
+    int n, m, k;
+    cout << "Birinci massivin olcusu: ";
+    cin >> n;
+    cout << "Ikinci massivin olcusu: ";
+    cin >> m;
+    cout << "k = ";
+    cin >> k;
+    add(n, m, k);
+    return 0;
+}
