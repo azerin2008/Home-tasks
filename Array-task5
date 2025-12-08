@@ -1,0 +1,49 @@
+#include <iostream>//maksimumlarin yerdeyismesi
+using namespace std;
+
+void arr(int n, int m){
+    int a[n];
+    cout <<"a[1] = ";
+    cin >> a[0];
+    for (int i = 1; i < n; i++){
+        cout << "a[" << i + 1 << "] = ";
+        cin >> a[i];
+    }
+    cout << endl;
+    int max1 = a[0];
+    for(int j = 0; j < n; j++){
+        if(a[j] > max1){
+            max1 = a[j];
+        }
+    }
+    int b[m];
+    cout <<"b[1] = ";
+    cin >> b[0];
+    for (int i = 1; i < m; i++){
+        cout << "b[" << i + 1 << "] = ";
+        cin >> b[i];
+    }
+    cout << endl;
+    int max2 = b[0];
+    for(int j = 0; j < m; j++){
+        if(b[j] > max2){
+            max2 = b[j];
+        }
+    }
+    int swap = max1;
+    max1 = max2;
+    max2 = swap;
+    cout << "max1 = " << max1 << endl;
+    cout << "max2 = " << max2 << endl;
+}
+
+
+int main() {
+    int n, m;
+    cout << "n = ";
+    cin >> n;
+    cout << "m = ";
+    cin >> m;
+    arr(n, m);
+    return 0;
+}
