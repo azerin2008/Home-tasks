@@ -1,0 +1,40 @@
+#include <iostream>//x massivindeki elementin y massivindeki her hansi elementin kvadrati olub-olmadigini yoxlayan proqram
+#include <cmath>
+using namespace std;
+
+void arr(int n, int m){
+    int x[n];
+    cout <<"x[1] = ";
+    cin >> x[0];
+    for (int i = 1; i < n; i++){
+        cout << "x[" << i + 1 << "] = ";
+        cin >> x[i];
+    }
+    cout << endl;
+    int y[m];
+    cout <<"y[1] = ";
+    cin >> y[0];
+    for (int i = 1; i < m; i++){
+        cout << "y[" << i + 1 << "] = ";
+        cin >> y[i];
+    }
+    cout << endl;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(x[i] == pow(y[j], 2)){
+                cout << x[i] << ", ";
+            }
+        }
+    }
+}
+
+int main() {
+    int n, m;
+    cout << "n = ";
+    cin >> n;
+    cout << "m = ";
+    cin >> m;
+    arr(n, m);
+    
+    return 0;
+}
