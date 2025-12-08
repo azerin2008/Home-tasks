@@ -1,0 +1,36 @@
+#include <iostream>//Ilk ve son 0 arasinda mesafe
+using namespace std;
+
+void arr(int n){
+    int first = 0;
+    int second = 0;
+    int a[n];
+    cout <<"a[1] = ";
+    cin >> a[0];
+    for (int i = 1; i < n; i++){
+        cout << "a[" << i + 1 << "] = ";
+        cin >> a[i];
+    }
+    for(int j = 0; j < n; j++){
+        if(a[j] == 0){
+            first = j;
+            break;
+        }
+    }
+    for(int k = n - 1; k > 0; k--){
+        if(a[k] == 0){
+            second = k;
+            break;
+        }
+    }
+    cout << "Ilk ve son 0 arasindaki mesafe: " << second - first << endl;
+}
+
+
+int main() {
+    int n;
+    cout << "n = ";
+    cin >> n;
+    arr(n);
+    return 0;
+}
